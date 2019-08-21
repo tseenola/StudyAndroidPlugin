@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/bt_PrintclassLoader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打印当前classLoader对象"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/bt_CallLocalMethod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="通过ClassLoader调用自己的类"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/bt_LoadPlugin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="载入插件apk到私有目录"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/bt_LoadPluginTodex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="解析插件apk为dex文件"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/bt_LoadPluginMethod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="调用插件apk函数"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <Button
+        android:id="@+id/bt_LoadPluginAty"
+        android:text="启动插件apk中的Activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/bt_LoadPluginService"
+        android:text="启动插件apk service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/bt_LoadPluginBroad"
+        android:text="注册插件apk广播"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
